@@ -3,6 +3,13 @@ body{
 }
 
 .bot{
-    padding: 50px;
-    width: 500px;
+    padding: px;
+    width: 5px;
 }
+
+nav {
+    background-color: #ff0a0a;
+    padding: 20px;
+    margin-top: -10px;
+
+  }

@@ -1,10 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+
 <?php
 
 // Configurações do banco de dados
 $host = 'localhost';
 $user = 'root'; // usuário padrão do XAMPP
 $password = ''; // senha padrão do XAMPP (vazia)
-$database = 'login'; // substitua pelo nome do seu banco de dados
+$database = 'auto_pecas'; // substitua pelo nome do seu banco de dados
 
 // Conectar ao banco de dados
 $conn = new mysqli($host, $user, $password, $database);
@@ -49,3 +60,31 @@ if (!empty($dados["Sendlogin"])) {
 }
 
 ?>
+
+<div class="navbar12">
+
+<nav>
+    
+    <button class="bot" ><a href="./navbar/teste1.html">CLICA</a></button>
+
+</nav>
+
+
+
+</div>
+
+<!-- Inicio do formulario -->
+<form method="POST" action="">
+
+<label>Usuário: </label>
+<input type="text" name="usuario" placeholder="digite o usuário" required><br><br>
+
+<label>Senha: </label>
+<input type="password" name="senha_usuario" placeholder="digite a senha" required><br><br>
+
+<input type="submit" name="Sendlogin" value="Acessar">
+</form>
+<!-- fim do formulario -->
+    
+</body>
+</html>
